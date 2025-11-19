@@ -6,14 +6,30 @@
 </title>
 <style>
     body {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Georgia', serif;
     max-width: 800px;
+    width: 100%;
     margin: 0 auto;
     padding: 20px;
     line-height: 1.7;
     background: #111;
     color: #eee;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    box-sizing: border-box;
+}
+
+/* ← This part below is the mobile fix (keep it too!) */
+@media (max-width: 600px) {
+    body {
+        padding: 10px;
+        max-width: 100%;
+        font-size: 16px;
     }
+    h1 { font-size: 2.5rem; }
+    h2 { font-size: 1.5rem; }
+    img { width: 100% !important; }
+}
     .b1 {margin-top: 40px;}
     .e1, .e2 {margin-bottom: 0; margin-top: 0;}
     .e2 {margin-left: 10px;}
@@ -75,4 +91,5 @@ these are the basics we keeping it simple ;)
 <h1 class="r1">Thank you very much for reading,</h1>
 <h1 class="r2">I wish you a successful endeavour on your journey to the Top!.</h1>
 </body>
+
 </html>
